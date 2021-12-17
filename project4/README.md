@@ -34,6 +34,7 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 - Beautify
 - Add Animations
 - Comment/Edit Features
+-Community Features
 
 ## Components
 
