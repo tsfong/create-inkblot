@@ -1,0 +1,14 @@
+.inkblot_container {
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.gallery-header {
+    padding: 10px;
+}
+
+.inkblot-pics {
+    width: 736px;
+    height: 482px;
+}

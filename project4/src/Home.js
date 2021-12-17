@@ -4,10 +4,10 @@ import React from "react"
 
 const Home = () => {
 
-    function getInkBlot() {
-        let inkNumber = Math.floor(math.random()*10)+1;
-        this.setState(( inkNumber = inkID))
-    }
+    // function getInkBlot() {
+    //     let inkNumber = Math.floor(math.random()*10)+1;
+    //     this.setState(( inkNumber = inkID))
+    // }
 
 
 
