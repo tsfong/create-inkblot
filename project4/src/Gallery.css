@@ -1,14 +1,28 @@
 .inkblot_container {
+    font-family: "PT Serif";
     text-align: center;
     margin: 0 auto;
     width: 60%;
 }
 
 .gallery-header {
-    padding: 10px;
+    padding: 20px;
 }
 
 .inkblot-pics {
     width: 736px;
     height: 482px;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 500;
+    font-style: italic;
 }
