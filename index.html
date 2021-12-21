@@ -4,29 +4,29 @@
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <title>Create an Inkblot</title>
-
+        <title>Inkblot Studio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css" />
         <link rel="icon" href="images.favicon.png" />
     </head>
-
-    <body> 
-        <nav class= "menu">
-            <h1 class="underline"><a href="index.html">Create Your Own!</a></h1>
-            <h3 class="underline"><a href="about.html">Back to Previous Page</a></h3>
-            <h3 id="clear" value="Clear">Reset Canvas</h3>
-        </nav>
-        
+   
+    <body>  
+        <div class="backgrounds">
+        <nav id= "header-container">
+            <div id="header-options">
+            <h1 class="header-text">Create Your Own Inkblot!</h1>
+            <button id="layer-canvas" value="Layer">Layer Canvas</button>
+            <button id="clear" value="Clear">Reset Canvas</button>
+            </div>
         <canvas id="canvas"></canvas>
-        
-        <div id="instructions">
-            <h2>Click and Drag to Draw</h2>
-        </div>
 
-        <!-- IF CDN fails to load, serve up the local version -->
+        </nav> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="app.js"></script>
+    </div>
     </body>
+
 </html>
 

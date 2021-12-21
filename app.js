@@ -1,3 +1,10 @@
+async function autoDownloadCanvas() {
+    let link = document.getElementById('link');
+    link.setAttribute('download', 'example.png');
+    link.setAttribute('href', canvas.toDataURL("image/png"));
+    link.click();
+  }
+
 var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
 
@@ -6,11 +13,14 @@ var instructions = document.getElementById("instructions");
 var radius = 3; 
 var dragging = false; 
 
-canvas.width = 500;
-canvas.height = 500;
+canvas.width = 475;
+canvas.height = 475;
 
-context.fillStyle = "black";
-context.strokeStyle = "black";
+context.fillStyle="black";
+context.fillRect(0, 0, canvas.width, canvas.height)
+
+// context.fillStyle = "black";
+context.strokeStyle = "white";
 context.lineCap = "round";
 context.globalAlpha = "0.3";
 context.lineWidth = 25;
@@ -18,7 +28,7 @@ context.shadowBlur = 5;
 context.shadowColor = "black";
 context.globalCompositeOperation = "source-over";
 
-var putPoint = function(e){
+var mouseDraw = function(e){
     var x = e.offsetX;
     var y = e.offsetY;
 
@@ -59,9 +69,14 @@ var stop = function(){
     context.beginPath();
 }
 
-canvas.addEventListener("mousemove", putPoint);
+canvas.addEventListener("mousemove", mouseDraw);
 canvas.addEventListener("mousedown", start);
 canvas.addEventListener("mouseup", stop);
+
+document.getElementById("layer-canvas").addEventListener("click", function() {
+    context.fillRect(0, 0, canvas.width, canvas.height);
+    instructions.style.display = 'block';
+}, false);
 
 document.getElementById("clear").addEventListener("click", function() {
     context.clearRect(0, 0, canvas.width, canvas.height);

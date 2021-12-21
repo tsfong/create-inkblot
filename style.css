@@ -1,0 +1,20 @@
+body {
+    background-image: url(background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    font-family: "Raleway";
+}
+
+#canvas { 
+    border: 10px solid white;
+}
+
+#header-options {
+    color: white;
+    padding: 70px;
+}
+
+#header-container {
+    text-align: center;
+}
