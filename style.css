@@ -1,0 +1,49 @@
+body {
+    background-image: url(background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    font-family: "Raleway";
+}
+
+#link-section {
+    text-align: center;
+    color:white;
+}
+
+a:link {
+    color: white;
+  }
+  
+  a:visited {
+    color: white;
+  }
+  
+  a:hover {
+    color: red;
+  }
+  
+  a:active {
+    color: white;
+  }
+
+#canvas { 
+    border: 10px solid white;
+}
+
+#header-options {
+    color: white;
+    padding: 15px;
+}
+
+.header-text {
+    font-size: 30px;
+    text-shadow: 2px 2px #606060;
+    letter-spacing: 1px;
+}
+
+#header-container {
+    padding-top: 80px;
+    color: white;
+    text-align: center;
+}
