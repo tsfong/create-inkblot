@@ -7,7 +7,12 @@ async function autoDownloadCanvas() {
 
 var canvas = document.getElementById("canvas");
 var context = canvas.getContext("2d");
-
+var download = function(){
+    var link = document.createElement('a');
+    link.download = 'inkblot.png';
+    link.href = document.getElementById('canvas').toDataURL()
+    link.click();
+  }
 var instructions = document.getElementById("instructions");
 
 var radius = 3; 
