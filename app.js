@@ -19,7 +19,6 @@ canvas.height = 475;
 context.fillStyle="black";
 context.fillRect(0, 0, canvas.width, canvas.height)
 
-// context.fillStyle = "black";
 context.strokeStyle = "white";
 context.lineCap = "round";
 context.globalAlpha = "0.3";
